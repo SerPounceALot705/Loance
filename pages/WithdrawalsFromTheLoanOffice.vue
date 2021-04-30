@@ -257,8 +257,7 @@
 
 <script>
 import Header from "../components/Header.vue";
-import BalanceReplenishment from "../pages/BalanceReplenishment.vue";
-import TransferOfAssets from "../pages/TransferOfAssets.vue";
+
 export default {
   name: "BalanceReplenishment",
   components: { Header },
