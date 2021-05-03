@@ -5,7 +5,7 @@
       <h3 class="transfer-of-assets-title">
         Перевод активов в инвестиционный кабинет
       </h3>
-      <div class="transfer-of-assets-container">
+      <div v-if="!isTransfer" class="transfer-of-assets-container">
         <h3 class="transfer-of-assets-subtitle">Выберите актив для перевода</h3>
         <div>
           <div class="replenishment-methods">
@@ -49,21 +49,21 @@
             <div class="replenishment-calc">
               <span class="usd">USD</span>
               <div class="transfer-cont">
-                <span class="calc-value">1400.00</span>
+                <input type="text" class="calc-value" placeholder="1400.00">
                 <img
                   class="transfer"
                   alt="arrows"
                   :src="require('~/assets/images/transfer.png')"
                 />
-                <span class="calc-value">1.000000000</span>
+                <input type="text" class="calc-value" placeholder="1.0000000">
               </div>
               <span class="btc">BTC</span>
             </div>
           </div>
         </div>
-        <button class="transfer-of-assets-button">Перевести инвестиции</button>
+        <button v-on:click="isTransfer = true" class="transfer-of-assets-button">Перевести инвестиции</button>
       </div>
-      <div class="transfer-request">
+      <div v-if="isTransfer" class="transfer-request">
         <h3 class="transfer-request-title">
           Заявка на перевод между кабинетами #10291571
         </h3>
@@ -124,12 +124,12 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "BalanceReplenishment",
   data() {
     return {
+      isTransfer: false,
       options: [
         {
           id: "1",
@@ -156,4 +156,5 @@ export default {
 <style>
 @import "~assets/styles/Select/styles.scss";
 @import "~assets/styles/TransferOfAssets/styles.scss";
+@import "~assets/styles/IncreaseIndeposit/styles.scss";
 </style>
