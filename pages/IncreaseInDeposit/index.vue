@@ -3,7 +3,7 @@
     <Header />
     <section class="increase-in-deposit">
       <h3 class="increase-in-deposit-title">Увеличение залога</h3>
-      <div class="increase-in-deposit-container">
+      <div v-if="!isIncrease" class="increase-in-deposit-container">
         <div class="transfer-of-assets-container transfer-of-assets-container_state">
           <div>
             <div class="replenishment-methods replenishment-methods_state">
@@ -55,13 +55,13 @@
               <div class="replenishment-calc">
                 <span class="usd">USD</span>
                 <div class="transfer-cont">
-                  <span class="calc-value">1400.00</span>
+                  <input type="text" class="calc-value" placeholder="14000.00">
                   <img
                     class="transfer"
                     alt="arrows"
-                    src="../assets/images/transfer.png"
+                    :src="require('~/assets/images/transfer.png')"
                   />
-                  <span class="calc-value">1.000000000</span>
+                  <input type="text" placeholder="1.00000" class="calc-value">
                 </div>
                 <span class="btc">BTC</span>
               </div>
@@ -90,9 +90,10 @@
             <td class="increase-in-deposit-table-current-sum">&#36;600.00</td>
           </tr>
         </table>
-        <button class="increase-in-deposit-button">Увеличить актив</button>
+        <button v-on:click="isIncrease = !isIncrease" class="increase-in-deposit-button">Увеличить актив</button>
       </div>
-      <div class="transfer-request">
+
+      <div v-if="isIncrease " class="transfer-request">
         <h3 class="transfer-request-title">
           Заявка на перевод между кабинетами #10291571
         </h3>
@@ -115,7 +116,7 @@
               <img
                 class="icon-img"
                 alt="icon"
-                src="../assets/images/btc.png"
+                :src="require('~/assets/images/btc.png')"
               />Bitcoin
             </td>
           </tr>
@@ -136,7 +137,7 @@
             <img
               class="transfer-cheсkmark"
               alt="transfer-cheсkmark"
-              src="../assets/images/okbig.png"
+              :src="require('~/assets/images/okbig.png')"
             />
           </div>
           <div class="transfer-of-assets-info-text-container">
@@ -153,13 +154,12 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
 
 export default {
   name: "BalanceReplenishment",
-  components: { Header },
   data() {
     return {
+      isIncrease: false,
       options: [
         {
           id: "1",
@@ -184,179 +184,9 @@ export default {
 </script>
 
 <style>
-
-.transfer-of-assets-container_state {
-    padding: 0;
-}
-
-.increase-in-deposit {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.increase-in-deposit-container {
-  width: 540px;
-  padding: 36px;
-  border-radius: 15px;
-  background-color: #ffffff;
-}
-
-.increase-in-deposit-title {
-  font-family: "Montserrat";
-  font-size: 25px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e375a;
-  margin-bottom: 37px;
-  margin-top: 27px;
-}
-
-.replenishment-methods_state {
-  margin-bottom: 30px;
-}
-
-.replenishment-sum-title_state {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e375a;
-}
-
-.increase-in-deposit-table-title {
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.31;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e375a;
-  border-bottom: none;
-  padding-right: 25px;
-  padding-bottom: 15px;
-}
-
-.increase-in-deposit-table-increase {
-  font-family: "Montserrat";
-  font-size: 13px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.62;
-  letter-spacing: normal;
-  text-align: left;
-  color: #38ca89;
-  border-bottom: none;
-  padding-right: 10px;
-  padding-bottom: 15px;
-}
-
-.increase-in-deposit-table-current {
-  font-family: "Montserrat";
-  font-size: 13px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.62;
-  letter-spacing: normal;
-  text-align: left;
-  color: #b3c5df;
-  border-bottom: none;
-  padding-bottom: 15px;
-  padding-left: 14px;
-}
-
-.increase-in-deposit-table-subtitle {
-  font-family: "Montserrat";
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.62;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e375a;
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-.transfer-img {
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  background-color: #39ca89;
-  border-radius: 50%;
-  margin-right: 40px;
-}
-
-.increase-in-deposit-table-increase-sum {
-  font-family: "Montserrat";
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.62;
-  letter-spacing: normal;
-  text-align: left;
-  color: #38ca89;
-  text-align: center;
-}
-
-.increase-in-deposit-table-current-sum {
-  font-family: "Montserrat";
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.62;
-  letter-spacing: normal;
-  text-align: left;
-  color: #b3c5df;
-  padding-left: 15px;
-}
-
-.increase-in-deposit-table tr {
-  border-bottom: 1px solid #e8ecf3;
-}
-
-.table {
-  border-collapse: collapse;
-}
-
-.increase-in-deposit-button {
-  width: 460px;
-  height: 61px;
-  border-radius: 10px;
-  background: rgb(103, 104, 244);
-  background: linear-gradient(
-    90deg,
-    rgba(103, 104, 244, 1) 32%,
-    rgba(179, 131, 253, 1) 70%
-  );
-  border: none;
-  cursor: pointer;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.19;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
+@import "~assets/styles/Select/styles.scss";
+@import "~assets/styles/TransferOfAssets/styles.scss";
+@import "~assets/styles/IncreaseIndeposit/styles.scss";
 </style>
 
 
