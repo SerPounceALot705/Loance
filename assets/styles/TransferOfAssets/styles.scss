@@ -1,239 +1,242 @@
 .page {
-    width: 100%;
-    height: 1080px;
-    max-width: 100%;
-    background: #e9ecf1;
-    background-image: url("~/assets/images/Web 1920 – 1.png");
+  width: 100%;
+  height: 1080px;
+  max-width: 100%;
+  background: #e9ecf1;
+  background-image: url("~/assets/images/Web 1920 – 1.png");
 }
 
 .transfer-of-assets {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .transfer-of-assets-title {
-    font-family: "Montserrat";
-    font-size: 25px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e375a;
-    margin-top: 53px;
-    margin-bottom: 37px;
+  font-family: "Montserrat";
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  margin-top: 53px;
+  margin-bottom: 37px;
 }
 
 .transfer-of-assets-subtitle {
-    font-family: "Montserrat";
-    font-size: 16px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.31;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e375a;
-    margin-bottom: 25px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  margin-bottom: 25px;
 }
 
 .transfer-of-assets-container {
-    width: 444px;
-    padding: 36px;
-    border-radius: 15px;
-    background-color: #ffffff;
+  width: 444px;
+  padding: 36px;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 .transfer-of-assets-button {
-    width: 380px;
-    height: 61px;
-    border-radius: 10px;
-    border: solid 1px #8d75f8;
-    background-color: rgba(0, 0, 0, 0);
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.36;
-    letter-spacing: normal;
-    text-align: center;
-    color: #8d75f8;
-    &:hover {
-        background: rgb(140, 116, 247);
-        background: linear-gradient(90deg, rgba(140, 116, 247, 1) 23%, rgba(140, 116, 247, 0.9332107843) 48%, rgba(186, 175, 235, 0.8659838936) 79%);
-        color: #ffffff;
-        transition: 0.3s ease-in-out;
-    }
+  width: 380px;
+  height: 61px;
+  border-radius: 10px;
+  border: solid 1px #8d75f8;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8d75f8;
 }
 
+.transfer-of-assets-button:hover {
+  background: rgb(103, 104, 244);
+  background: linear-gradient(90deg, rgba(103, 104, 244, 1) 32%, rgba(179, 131, 253, 1) 70%);
+  color: #ffffff;
+  transition: 0.7s 0s ease-in-out !important;
+  cursor: pointer;
+}
+
+
 .name-of-line {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #acb1b7;
-    width: 145px;
-    padding-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #acb1b7;
+  width: 145px;
+  padding-bottom: 15px;
 }
 
 .name-of-line_status {
-    padding-top: 25px;
-    padding-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 0;
 }
 
 .icon-img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .table-info-time {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e375a;
-    padding-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  padding-bottom: 15px;
 }
 
 .table-info-number {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e375a;
-    padding-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  padding-bottom: 15px;
 }
 
 .table-info-type {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #20385b;
-    padding-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #20385b;
+  padding-bottom: 15px;
 }
 
 .table-info-currency {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e375a;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .table-info-sum {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e375a;
-    padding-bottom: 15px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  padding-bottom: 15px;
 }
 
 .table-info-status {
-    font-family: "Montserrat";
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #6ae181;
-    padding-top: 25px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6ae181;
+  padding-top: 25px;
 }
 
 .transfer-table-status {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .additional-info {
-    font-family: "Montserrat";
-    font-size: 12px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #acb1b7;
-    text-decoration: underline;
-    cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: #acb1b7;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .transfer-of-assets-info-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
 }
 
 .transfer-of-assets-img {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    background-color: #39ca89;
-    border-radius: 50%;
-    margin-right: 35px;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background-color: #39ca89;
+  border-radius: 50%;
+  margin-right: 35px;
 }
 
 .transfer-of-assets-info-text-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .transfer-of-assets-info-text {
-    width: 288px;
-    font-family: "Montserrat";
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.46;
-    letter-spacing: normal;
-    text-align: left;
-    color: #1e375a;
-    margin-bottom: 7px;
+  width: 288px;
+  font-family: "Montserrat";
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.46;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  margin-bottom: 7px;
 }
 
 .transfer-of-assets-info-link {
-    font-family: "Montserrat";
-    font-size: 10px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.9;
-    letter-spacing: normal;
-    text-align: left;
-    color: #919aa7;
-    text-decoration: underline;
-    cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.9;
+  letter-spacing: normal;
+  text-align: left;
+  color: #919aa7;
+  text-decoration: underline;
+  cursor: pointer;
 }
