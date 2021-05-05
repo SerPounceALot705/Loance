@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header />
+    <Header/>
     <section class="transfer-of-assets">
       <h3 class="transfer-of-assets-title">
         Перевод активов в инвестиционный кабинет

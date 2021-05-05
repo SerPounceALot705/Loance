@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header />
+    <Header :isSubtitle="true"/>
     <section class="loanscreen">
       <div class="loanscreen-content-container">
         <div class="loanScreen-container">

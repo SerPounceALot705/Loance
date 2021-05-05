@@ -78,13 +78,13 @@
   </section>
 </template>
 
-
 <style lang="scss">
 @import "~assets/styles/Header/styles.scss";
 </style>
 
 <script>
 export default {
+  props: ["isSubtitle"],
   data() {
     return {
       options: [
