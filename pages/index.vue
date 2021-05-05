@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :isSubtitle="true"/>
+    <Header :isSubtitle="true" />
     <section class="loanscreen">
       <div class="loanscreen-content-container">
         <div class="loanScreen-container">
@@ -41,7 +41,9 @@
               :src="require('~/assets/images/upload.png')"
               alt="upload-icon"
             />
-            <a href="/LoanRepayment" class="repayment-of-credit-button-text">Погашение долга</a>
+            <a href="/LoanRepayment" class="repayment-of-credit-button-text"
+              >Погашение долга</a
+            >
           </div>
         </div>
         <div class="affiliate-program-container">
@@ -67,27 +69,33 @@
             >
             <span>
               Рыночная стоимость
-              <img
-                class="assets-table-title-information-img"
-                :src="require('~/assets/images/information.png')"
-                alt="information-icon"
-              />
+              <a class="info-link" href="">
+                <img
+                  class="assets-table-title-information-img"
+                  :src="require('~/assets/images/information.png')"
+                  alt="information-icon"
+              /></a>
             </span>
             <span
               >Кредитное обеспечение
-              <img
-                class="assets-table-title-information-credit-img"
-                :src="require('~/assets/images/information.png')"
-                alt="information-icon"
-              />
+              <a class="info-link" href="">
+                <img
+                  class="assets-table-title-information-credit-img"
+                  :src="require('~/assets/images/information.png')"
+                  alt="information-icon"
+                />
+              </a>
             </span>
             <span
               >Увеличить актив займа
-              <img
-                class="assets-table-title-information-asset-img"
-                :src="require('~/assets/images/information.png')"
-                alt="information-icon"
-            /></span>
+              <a class="info-link" href="">
+                <img
+                  class="assets-table-title-information-asset-img"
+                  :src="require('~/assets/images/information.png')"
+                  alt="information-icon"
+                />
+              </a>
+            </span>
           </div>
           <div class="assets-table-item-container">
             <div class="assets-table-item-current-container">
@@ -204,5 +212,5 @@ export default {};
 
 
 <style lang="scss">
-  @import '~assets/styles/LoanScreen/styles.scss';
+@import "~assets/styles/LoanScreen/styles.scss";
 </style>
