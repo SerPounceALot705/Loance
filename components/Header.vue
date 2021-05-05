@@ -55,7 +55,7 @@
         </li>
       </ul>
       <div
-        class="header-menu-underline header-menu-underline_transaction"
+        class="header-menu-underline-transaction  header-menu-underline-transaction_actived"
       ></div>
     </div>
 

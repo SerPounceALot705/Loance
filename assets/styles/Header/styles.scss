@@ -69,12 +69,14 @@
 }
 
 .header-menu li {
-    position: relative;
+  position: relative;
 }
 
 .header-menu-item-container {
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 38px;
 }
 
 .header-menu-underline {
@@ -85,17 +87,30 @@
   margin-top: 8px;
 }
 
-.header-menu-underline_transaction {
-    width: 118px;
+.header-menu-underline-transaction {
+  width: 118px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #e9ecf1;
+  margin-top: 8px;
 }
 
 .header-menu-underline_actived {
-    position: absolute;
-    top: 100%;
-    height: 4px;
-    border-radius: 5px;
-    background-color: #8d75f8;
-    width: 100%;
+  position: absolute;
+  top: 25px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #8d75f8;
+  width: 100%;
+}
+
+.header-menu-underline-transaction_actived {
+  position: absolute;
+  top: 25px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #8d75f8;
+  width: 118px;
 }
 
 ul {
