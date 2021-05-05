@@ -1,211 +1,208 @@
 @font-face {
-  font-family: "Montserrat-Black";
-  src: url("../vendor/fonts/Montserrat-Black.ttf") format("ttf");
+    font-family: "Montserrat-Black";
+    src: url("../vendor/fonts/Montserrat-Black.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: "Montserrat-BlackItalic";
-  src: url("../vendor/fonts/Montserrat-BlackItalic.ttf") format("ttf");
+    font-family: "Montserrat-BlackItalic";
+    src: url("../vendor/fonts/Montserrat-BlackItalic.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: "Montserrat-Bold";
-  src: url("../vendor/fonts/Montserrat-Bold.ttf") format("ttf");
+    font-family: "Montserrat-Bold";
+    src: url("../vendor/fonts/Montserrat-Bold.ttf") format("ttf");
 }
 
 @font-face {
-  font-family: "Montserrat-BoldItalic";
-  src: url("../vendor/fonts/Montserrat-BoldItalic.ttf") format("ttf");
+    font-family: "Montserrat-BoldItalic";
+    src: url("../vendor/fonts/Montserrat-BoldItalic.ttf") format("ttf");
 }
 
 .page {
-  width: 100%;
+    width: 100%;
 }
 
 .header {
-  width: 1110px;
-  height: 74px;
-  margin: 0 auto;
-  border-radius: 15px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 1110px;
+    height: 74px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-logo-container {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 29%;
-  text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 29%;
+    text-decoration: none;
 }
 
 .header-logo {
-  width: 28px;
-  height: 31px;
-  margin-right: 20px;
-  object-fit: contain;
+    width: 28px;
+    height: 31px;
+    margin-right: 20px;
+    object-fit: contain;
 }
 
 .header-name {
-  width: 88px;
-  height: 20px;
-  margin-top: 5px;
-  object-fit: contain;
+    width: 88px;
+    height: 20px;
+    margin-top: 5px;
+    object-fit: contain;
 }
 
 .keymat-logo {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e375a;
-  margin-left: 6px;
-  margin-top: 7px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    margin-left: 6px;
+    margin-top: 7px;
 }
 
 .header-menu li {
-  position: relative;
+    position: relative;
 }
 
 .header-menu-item-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 38px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 38px;
 }
 
 .header-menu-underline {
-  width: 211px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: #e9ecf1;
-  margin-top: 8px;
+    width: 211px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #e9ecf1;
+    margin-top: 8px;
 }
 
 .header-menu-underline-transaction {
-  width: 118px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: #e9ecf1;
-  margin-top: 8px;
+    width: 118px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #e9ecf1;
+    margin-top: 8px;
 }
 
 .header-menu-underline_actived {
-  position: absolute;
-  top: 25px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: #8d75f8;
-  width: 100%;
+    position: absolute;
+    top: 34px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #8d75f8;
+    width: 100%;
 }
 
 .header-menu-underline-transaction_actived {
-  position: absolute;
-  top: 25px;
-  height: 4px;
-  border-radius: 5px;
-  background-color: #8d75f8;
-  width: 118px;
+    position: absolute;
+    top: 25px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #8d75f8;
+    width: 118px;
 }
 
 ul {
-  &.header-menu {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 53px;
-  }
-
-  &.header-transaction {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    position: relative;
-  }
+    &.header-menu {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 53px;
+    }
+    &.header-transaction {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        position: relative;
+    }
 }
 
 .header-link {
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-right: 24px;
 }
 
 .header-menu-img {
-  width: 26px;
-  height: 26px;
-  margin: 0 11px 0 0;
-  object-fit: contain;
+    width: 26px;
+    height: 26px;
+    margin: 0 11px 0 0;
+    object-fit: contain;
 }
 
 .header-menu-img_accounting {
-  width: 25px;
-  height: 25px;
-  margin: 0 11px 0 0;
-  object-fit: contain;
+    width: 25px;
+    height: 25px;
+    margin: 0 11px 0 0;
+    object-fit: contain;
 }
 
 .header-menu-text {
-  height: 15px;
-  margin: 5px 0;
-  font-family: "Montserrat";
-  font-size: 12px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #1e375a;
-  text-decoration: none;
+    height: 15px;
+    margin: 5px 0;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    text-decoration: none;
 }
 
 .header-notifications-container {
-  margin-left: 53px;
-  margin-right: 22px;
+    margin-left: 53px;
+    margin-right: 22px;
 }
 
 .notifications {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .account {
-  width: 63px;
-  height: 26px;
-  border-radius: 13px;
-  box-shadow: 0 1px 2px 0 rgba(30, 55, 90, 0.16);
-  background-color: #ffffff;
-  padding: 0;
-  margin-bottom: 5px;
-  margin-right: 21px;
+    width: 63px;
+    height: 26px;
+    border-radius: 13px;
+    box-shadow: 0 1px 2px 0 rgba(30, 55, 90, 0.16);
+    background-color: #ffffff;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-right: 21px;
 }
 
 .icon-account {
-  width: 26px;
-  height: 26px;
-  margin-right: 5px;
-  object-fit: contain;
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+    object-fit: contain;
 }
 
 .account {
-  .vs__dropdown-toggle {
-    border: none;
-  }
-
-  .vs__selected {
-    margin: 0;
-    padding: 0;
-  }
-
-  .vs__selected-options {
-    width: 63px;
-    height: 26px;
-    margin: 0;
-    padding: 0;
-  }
+    .vs__dropdown-toggle {
+        border: none;
+    }
+    .vs__selected {
+        margin: 0;
+        padding: 0;
+    }
+    .vs__selected-options {
+        width: 63px;
+        height: 26px;
+        margin: 0;
+        padding: 0;
+    }
 }

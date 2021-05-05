@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header />
+    <Header selectLine="transaction"/>
     <section class="transaction-history">
       <h3 class="transaction-history-title">История транзакций</h3>
       <input class="transaction-history-input" placeholder="Поиск по номеру" />

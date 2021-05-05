@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :isSubtitle="true" />
+    <Header :isSubtitle="true" selectLine="default"/>
     <section class="loanscreen">
       <div class="loanscreen-content-container">
         <div class="loanScreen-container">
@@ -52,7 +52,9 @@
           <input
             class="affiliate-program-input"
             placeholder="5124foofa22o44odd11o"
+            ref="affiliate"
           />
+          <div class="copy" v-on:click="copy"></div>
           <button class="affiliate-program-button">
             Подробнее о партнерской программе
           </button>
@@ -69,33 +71,27 @@
             >
             <span>
               Рыночная стоимость
-              <a class="info-link" href="">
-                <img
-                  class="assets-table-title-information-img"
-                  :src="require('~/assets/images/information.png')"
-                  alt="information-icon"
-              /></a>
+              <img
+                class="assets-table-title-information-img"
+                :src="require('~/assets/images/information.png')"
+                alt="information-icon"
+              />
             </span>
             <span
               >Кредитное обеспечение
-              <a class="info-link" href="">
-                <img
-                  class="assets-table-title-information-credit-img"
-                  :src="require('~/assets/images/information.png')"
-                  alt="information-icon"
-                />
-              </a>
+              <img
+                class="assets-table-title-information-credit-img"
+                :src="require('~/assets/images/information.png')"
+                alt="information-icon"
+              />
             </span>
             <span
               >Увеличить актив займа
-              <a class="info-link" href="">
-                <img
-                  class="assets-table-title-information-asset-img"
-                  :src="require('~/assets/images/information.png')"
-                  alt="information-icon"
-                />
-              </a>
-            </span>
+              <img
+                class="assets-table-title-information-asset-img"
+                :src="require('~/assets/images/information.png')"
+                alt="information-icon"
+            /></span>
           </div>
           <div class="assets-table-item-container">
             <div class="assets-table-item-current-container">
@@ -207,7 +203,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    copy(event) {
+      let value = this.$refs.affiliate;
+      value.select();
+      document.execCommand("copy");
+    },
+  },
+};
 </script>
 
 

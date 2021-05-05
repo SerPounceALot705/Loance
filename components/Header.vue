@@ -11,7 +11,7 @@
         alt="logo-name"
         :src="require('~/assets/images/loance.png')"
       />
-      <p class="keymat-logo">by Keymat</p>
+      <p v-if="isSubtitle" class="keymat-logo">by Keymat</p>
     </a>
     <div class="header-menu-item-container">
       <ul class="header-menu">
@@ -24,7 +24,11 @@
             />
             <span class="header-menu-text">Займ</span>
           </a>
-          <div class="header-menu-underline header-menu-underline_actived"></div>
+          <div
+            :class="{
+              'header-menu-underline_actived': selectLine == 'default',
+            }"
+          ></div>
         </li>
         <li>
           <a href="" class="header-link">
@@ -55,7 +59,10 @@
         </li>
       </ul>
       <div
-        class="header-menu-underline-transaction  header-menu-underline-transaction_actived"
+        class="header-menu-underline-transaction"
+        :class="{
+          'header-menu-underline-transaction_actived': selectLine == 'transaction',
+        }"
       ></div>
     </div>
 
@@ -84,7 +91,7 @@
 
 <script>
 export default {
-  props: ["isSubtitle"],
+  props: ["isSubtitle", "selectLine"],
   data() {
     return {
       options: [
