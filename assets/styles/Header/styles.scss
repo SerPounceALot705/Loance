@@ -23,7 +23,7 @@
 }
 
 .header {
-  width: 70%;
+  width: 1110px;
   height: 74px;
   margin: 0 auto;
   border-radius: 15px;
@@ -37,6 +37,7 @@
   display: flex;
   justify-content: space-between;
   margin-right: 29%;
+  text-decoration: none;
 }
 
 .header-logo {
@@ -51,6 +52,20 @@
   height: 20px;
   margin-top: 5px;
   object-fit: contain;
+}
+
+.keymat-logo {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1e375a;
+  margin-left: 6px;
+  margin-top: 7px;
 }
 
 .header-menu li {

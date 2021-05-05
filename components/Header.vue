@@ -11,6 +11,7 @@
         alt="logo-name"
         :src="require('~/assets/images/loance.png')"
       />
+      <p class="keymat-logo">by Keymat</p>
     </a>
     <div class="header-menu-item-container">
       <ul class="header-menu">
