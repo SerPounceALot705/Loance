@@ -11,7 +11,7 @@
         alt="logo-name"
         :src="require('~/assets/images/loance.png')"
       />
-      <p v-if="isSubtitle" class="keymat-logo">by Keymat</p>
+      <p class="keymat-logo">by Keymat</p>
     </a>
     <div class="header-menu-item-container">
       <ul class="header-menu">
@@ -91,7 +91,7 @@
 
 <script>
 export default {
-  props: ["isSubtitle", "selectLine"],
+  props: ["selectLine"],
   data() {
     return {
       options: [

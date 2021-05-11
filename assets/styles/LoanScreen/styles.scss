@@ -1,3 +1,4 @@
+@import "~assets/styles/_adaptive.scss";
 .loanscreen {
     margin-top: 44px;
 }
@@ -11,16 +12,20 @@
 }
 
 .loanscreen-content-container {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
+    @media #{$phone} {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .loanScreen-container {
-    width: 255px;
+    max-width: 255px;
     height: 330px;
     border-radius: 15px;
     background-color: #ffffff;
@@ -107,7 +112,7 @@
 }
 
 .withdrawal-of-funds-container {
-    width: 350px;
+    max-width: 350px;
     height: 330px;
     padding: 36px 32px;
     border-radius: 15px;
@@ -172,7 +177,7 @@
 }
 
 .affiliate-program-container {
-    width: 446px;
+    width: 100%;
     height: 330px;
     border-radius: 15px;
     box-shadow: 0 0 40px 0 rgba(30, 55, 90, 0.1);
