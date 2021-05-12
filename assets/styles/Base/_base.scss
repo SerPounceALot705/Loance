@@ -1,0 +1,229 @@
+.transfer-request {
+    width: 444px;
+    height: 552px;
+    padding: 36px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+    @media #{$phone} {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+.transfer-request-title {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    margin-bottom: 27px;
+
+    @media #{$phone} {
+        line-height: 1.50;
+    }
+}
+
+.name-of-line {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #acb1b7;
+    width: 145px;
+    padding-bottom: 15px;
+}
+
+.name-of-line_status {
+    padding-top: 25px;
+    padding-bottom: 0;
+}
+
+.icon-img {
+    margin-right: 10px;
+}
+
+.table-info-time {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    padding-bottom: 15px;
+}
+
+.table-info-number {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    padding-bottom: 15px;
+}
+
+.table-info-type {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #20385b;
+    padding-bottom: 15px;
+}
+
+.table-info-currency {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.table-info-sum {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    padding-bottom: 15px;
+}
+
+.table-info-status {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6ae181;
+    padding-top: 25px;
+}
+
+.transfer-table-status {
+    margin-bottom: 20px;
+}
+
+.additional-info {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #acb1b7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.transfer-of-assets-info-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+}
+
+
+.transfer-img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background-color: #39ca89;
+    border-radius: 50%;
+    margin-right: 40px;
+
+    @media #{$phone} {
+        width: 50px;
+        height: 50px;
+        margin-right: 25px;
+    }
+
+    .transfer-cheсkmark {
+        @media #{$phone} {
+            width: 30px;
+            height: 30px;
+        }
+       
+    }
+
+}
+
+.transfer-of-assets-img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background-color: #39ca89;
+    border-radius: 50%;
+    margin-right: 35px;
+}
+
+.transfer-of-assets-info-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-of-assets-info-text {
+    width: 288px;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1e375a;
+    margin-bottom: 7px;
+
+    @media #{$phone} {
+        width: 100%;
+    }
+}
+
+.transfer-of-assets-info-link {
+    font-family: "Montserrat";
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.9;
+    letter-spacing: normal;
+    text-align: left;
+    color: #919aa7;
+    text-decoration: underline;
+    cursor: pointer;
+}

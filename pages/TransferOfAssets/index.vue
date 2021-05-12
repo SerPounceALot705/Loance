@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header/>
+    <Header />
     <section class="transfer-of-assets">
       <h3 class="transfer-of-assets-title">
         Перевод активов в инвестиционный кабинет
@@ -10,58 +10,31 @@
         <div>
           <div class="replenishment-methods">
             <h3 class="methods-subtitle">Переводы криптовалютой:</h3>
-            <v-select
-              v-model="selected"
-              :options="options"
-              :clearable="false"
-              :searchable="false"
-              :placeholder="'placeholder'"
-              label="title"
-              class="replenishment-select"
-            >
-              <template
-                #selected-option="{ iconUrl, title, subtitle, amount, balance }"
-              >
-                <div class="icon-container">
-                  <img :src="iconUrl" alt="icon" class="icon-img" />
-                </div>
-                <div class="select-info">
-                  <div class="select-info-container">
-                    <div class="select-info-title">{{ title }}</div>
-                    <div class="select-info-subtitle">{{ subtitle }}</div>
-                  </div>
-                  <div>
-                    <div class="select-info-title select-info-title_amount">
-                      {{ amount }}
-                    </div>
-                    <div class="select-info-subtitle">{{ balance }}</div>
-                  </div>
-                </div>
-              </template>
-              <template v-slot:option="option">
-                <img :src="option.iconUrl" alt="icon" class="icon-img" />
-                <span>{{ option.title }}</span>
-              </template>
-            </v-select>
+            <Select />
           </div>
           <div class="replenishment-sum">
             <h3 class="replenishment-sum-title">Введите сумму перевода</h3>
             <div class="replenishment-calc">
               <span class="usd">USD</span>
               <div class="transfer-cont">
-                <input type="text" class="calc-value" placeholder="1400.00">
+                <input type="text" class="calc-value" placeholder="1400.00" />
                 <img
                   class="transfer"
                   alt="arrows"
                   :src="require('~/assets/images/transfer.png')"
                 />
-                <input type="text" class="calc-value" placeholder="1.0000000">
+                <input type="text" class="calc-value" placeholder="1.0000000" />
               </div>
               <span class="btc">BTC</span>
             </div>
           </div>
         </div>
-        <button v-on:click="isTransfer = true" class="transfer-of-assets-button">Перевести инвестиции</button>
+        <button
+          v-on:click="isTransfer = true"
+          class="transfer-of-assets-button"
+        >
+          Перевести инвестиции
+        </button>
       </div>
       <div v-if="isTransfer" class="transfer-request">
         <h3 class="transfer-request-title">
@@ -125,8 +98,11 @@
 </template>
 
 <script>
+import Header from "~/components/Header.vue";
+import Select from "~/components/Select.vue";
 export default {
   name: "BalanceReplenishment",
+  components: { Header, Select },
   data() {
     return {
       isTransfer: false,
@@ -154,7 +130,4 @@ export default {
 </script>
 
 <style>
-@import "~assets/styles/Select/styles.scss";
-@import "~assets/styles/TransferOfAssets/styles.scss";
-@import "~assets/styles/IncreaseIndeposit/styles.scss";
 </style>

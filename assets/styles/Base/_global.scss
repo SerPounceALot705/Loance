@@ -1,0 +1,16 @@
+// global styles
+@import "~assets/styles/_adaptive.scss";
+@import "_base.scss";
+
+/// companents styles
+@import "~assets/styles/components/Select/styles.scss";
+
+/// pages styles
+@import "~assets/styles/LoanScreen/styles.scss";
+@import "~assets/styles/IncreaseIndeposit/styles.scss";
+@import '~assets/styles/BalanceReplenishment/styles.scss';
+@import "~assets/styles/LoanRepayment/styles.scss";
+@import "~assets/styles/TransactionHistory/styles.scss";
+@import "~assets/styles/TransferOfAssets/styles.scss";
+@import "~assets/styles/TransfersWithinTheSystem/styles.scss";
+@import "~assets/styles/WithdrawalsFromTheLoanOffice/styles.scss";

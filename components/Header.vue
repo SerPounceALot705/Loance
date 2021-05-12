@@ -86,7 +86,7 @@
 </template>
 
 <style lang="scss">
-@import "~assets/styles/Header/styles.scss";
+@import "~assets/styles/components/Header/styles.scss";
 </style>
 
 <script>

@@ -219,5 +219,21 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~assets/styles/TransactionHistory/styles.scss";
+@import "~assets/styles/_adaptive.scss";
+
+.page {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 1453px;
+  background-image: url("~/assets/images/1470.png");
+  background-repeat: no-repeat;
+
+   @media #{$phone} {
+    width: 100%;
+    background-image: none;
+    height: auto;
+
+  }
+}
+
 </style>

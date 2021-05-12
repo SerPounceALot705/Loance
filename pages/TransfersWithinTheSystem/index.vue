@@ -22,45 +22,7 @@
               <h3 class="methods-subtitle">
                 Выберите актив для перевода внутри системы:
               </h3>
-              <v-select
-                v-model="selected"
-                :options="options"
-                :clearable="false"
-                :searchable="false"
-                :placeholder="'placeholder'"
-                label="title"
-                class="replenishment-select"
-              >
-                <template
-                  #selected-option="{
-                    iconUrl,
-                    title,
-                    subtitle,
-                    amount,
-                    balance,
-                  }"
-                >
-                  <div class="icon-container">
-                    <img :src="iconUrl" alt="icon" class="icon-img" />
-                  </div>
-                  <div class="select-info">
-                    <div class="select-info-container">
-                      <div class="select-info-title">{{ title }}</div>
-                      <div class="select-info-subtitle">{{ subtitle }}</div>
-                    </div>
-                    <div>
-                      <div class="select-info-title select-info-title_amount">
-                        {{ amount }}
-                      </div>
-                      <div class="select-info-subtitle">{{ balance }}</div>
-                    </div>
-                  </div>
-                </template>
-                <template v-slot:option="option">
-                  <img :src="option.iconUrl" alt="icon" class="icon-img" />
-                  <span>{{ option.title }}</span>
-                </template>
-              </v-select>
+              <Select />
             </div>
             <div class="replenishment-sum">
               <h3 class="replenishment-sum-title">Введите сумму перевода</h3>
@@ -165,9 +127,11 @@
 
 
 <script>
-
+import Header from "~/components/Header.vue";
+import Select from '~/components/Select.vue';
 export default {
   name: "BalanceReplenishment",
+  components: { Header, Select },
   data() {
     return {
       selectPage: 'transfers',
@@ -195,8 +159,4 @@ export default {
 </script>
 
 <style>
-@import "~assets/styles/Select/styles.scss";
-@import "~assets/styles/TransferOfAssets/styles.scss";
-@import "~assets/styles/IncreaseIndeposit/styles.scss";
-@import "~assets/styles/TransfersWithinTheSystem/styles.scss";
 </style>
