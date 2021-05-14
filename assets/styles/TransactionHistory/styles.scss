@@ -204,13 +204,19 @@
   width: 150px;
 }
 
-
+.transaction-history-item-container {
+  @media #{$phone} {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+}
 
 .transaction-history-item {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 1044px;
+  max-width: 1044px;
   height: 60px;
   padding: 12px;
   border-radius: 5px;
@@ -224,8 +230,9 @@
 
   @media #{$phone} {
     justify-content: flex-start;
-    width: 345px;
+    width: 400px;
     padding: 5px;
+    
   }
 
 }
@@ -354,8 +361,8 @@
   right: 30px;
 
   @media #{$phone} {
-    top: 5px;
-    right: 5px;
+    top: 35%;
+    right: 10px;
   }
 
   img {

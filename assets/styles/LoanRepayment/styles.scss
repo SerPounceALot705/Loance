@@ -455,4 +455,8 @@
         color: #ffffff;
         transition: 0.3s ease-in-out !important;
     }
+
+    @media #{$phone} {
+        width: 100% !important;
+    }
 }

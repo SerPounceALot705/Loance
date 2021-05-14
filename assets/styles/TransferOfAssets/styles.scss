@@ -1,16 +1,12 @@
-.page {
-    max-width: 1920px;
-    margin: 0 auto;
-    height: 1080px;
-    background-image: url("~/assets/images/1080.png");
-    background-repeat: no-repeat;
-}
-
 .transfer-of-assets {
     width: 70%;
     margin: 0 auto;
-}
 
+    @media #{$phone} {
+        width: 100%;
+        padding: 20px;
+    }
+}
 .transfer-of-assets-title {
     font-family: "Montserrat";
     font-size: 25px;
@@ -23,6 +19,14 @@
     color: #1e375a;
     margin-top: 53px;
     margin-bottom: 37px;
+
+    @media #{$phone} {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
 }
 
 .transfer-of-assets-subtitle {
@@ -36,6 +40,11 @@
     text-align: left;
     color: #1e375a;
     margin-bottom: 25px;
+
+    @media #{$phone} {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
 }
 .transfer-of-assets-button {
     width: 380px;
@@ -52,6 +61,11 @@
     letter-spacing: normal;
     text-align: center;
     color: #8d75f8;
+
+    @media #{$phone} {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
 
 .transfer-of-assets-button:hover {

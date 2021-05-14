@@ -9,11 +9,20 @@
 .withdrawals-from-the-loan-office {
     width: 70%;
     margin: 0 auto;
+
+    @media #{$phone} {
+        width: 100%;
+    }
 }
 
 .withdrawals-from-the-loan-office-content-container {
     display: flex;
     flex-direction: row;
+
+    @media #{$phone} {
+        flex-direction: column;
+        
+    }
 }
 
 .withdrawals-from-the-loan-office-container {
@@ -25,6 +34,11 @@
     display: flex;
     flex-direction: column;
     margin-right: 30px;
+
+    @media #{$phone} {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 
@@ -40,6 +54,12 @@
     color: #1e375a;
     margin-bottom: 37px;
     margin-top: 27px;
+
+    @media #{$phone} {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
 }
 
 span.withdrawals-from-the-loan-office-subtitle {
@@ -65,6 +85,10 @@ span.withdrawals-from-the-loan-office-subtitle {
     border: solid 1px #e8ecf3;
     background-color: #ffffff;
     margin-bottom: 32px;
+
+    @media #{$phone} {
+        width: 100%;
+    }
 }
 
 .withdrawals-from-the-loan-office-input:focus {
@@ -106,6 +130,10 @@ span.withdrawals-from-the-loan-office-subtitle {
     text-align: center;
     color: #8d75f8;
     cursor: pointer;
+
+    @media #{$phone} {
+        width: 100%;
+    }
 }
 
 .withdrawals-from-the-loan-office-button:hover {
@@ -170,6 +198,10 @@ span.withdrawals-from-the-loan-office-subtitle {
     color: #ffffff;
     margin-top: 40px;
     transition: 0.2s ease-in-out;
+
+    @media #{$phone} {
+        width: 100%;
+    }
 }
 
 .withdrawals-button:hover {
@@ -198,6 +230,14 @@ span.withdrawals-from-the-loan-office-subtitle {
     border-radius: 15px;
     background-color: #ffffff;
     border-bottom: 1px solid #e7e7e7;
+
+    @media #{$phone} {
+        width: 100%;
+        height: auto;
+        padding: 0 20px 20px;
+    }
+
+
 }
 
 .table-info-status_current-transactions-state {
@@ -219,6 +259,13 @@ span.withdrawals-from-the-loan-office-subtitle {
     padding: 36px 25px 30px;
     border-radius: 15px;
     background-color: #ffffff;
+
+    @media #{$phone} {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-right: 0;
+    }
 }
 
 .name-of-line_withdrawals-status,

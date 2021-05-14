@@ -44,7 +44,6 @@
 
   @media #{$phone} {
     background-image: none;
-    background-color: aquamarine;
   }
 }
 

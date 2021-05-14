@@ -27,7 +27,7 @@
         <span>Сумма(с вычетом комиссии)</span>
         <span>Статус</span>
       </div>
-      <div v-for="item in items" :key="item.id">
+      <div class="transaction-history-item-container" v-for="item in items" :key="item.id">
         <div class="transaction-history-item">
           <div
             v-on:click="item.info.isOpen = !item.info.isOpen"

@@ -61,7 +61,7 @@
   margin-right: 32px;
 
   @media #{$phone} {
-   
+   padding: 20px;
     margin-right: 0;
     
   }
@@ -151,6 +151,10 @@
   text-align: left;
   color: #1e375a;
   margin-bottom: 13px;
+
+  @media #{$phone} {
+    margin-top: 20px;
+  }
 }
 
 
@@ -194,8 +198,8 @@
   }
 
   @media #{$phone} {
-    width: 90%;
-    margin: 20px 20px;
+    width: 100%;
+    margin: 20px 0;
   }
 }
 
@@ -213,7 +217,7 @@
   margin-bottom: 22px;
 
   @media #{$phone} {
-    margin-top: 30px;
+    margin-top: 0;
     text-align: center;
   }
 }
@@ -291,7 +295,7 @@
 
   @media #{$phone} {
     width: 100%;
-    padding: 0 20px;
+    margin-top: 20px;
     margin-bottom: 0;
   }
 }

@@ -3,21 +3,27 @@
     <Header />
     <section class="transfers-within-the-system">
       <h3 class="transfers-within-the-system-title">Перевод внутри системы</h3>
-      <div v-if="selectPage == 'transfers'" class="transfers-within-the-system-content-container">
+      <div
+        v-if="selectPage == 'transfers'"
+        class="transfers-within-the-system-content-container"
+      >
         <div class="transfers-within-the-system-container">
-          <h3 class="transfers-within-the-system-subtitle">
-            Оформление перевода внутри системы
-          </h3>
-          <span class="transfers-within-the-system-text">
-            Введите логин участника Loance для перевода
-          </span>
-          <div class="transfers-within-the-system-input-container">
-            <input class="transfers-within-the-system-input" />
-            <span class="transfers-within-the-system-input-text"
-              >Данный пользователь существует в системе</span
-            >
+          <div class="content-container">
+            <h3 class="transfers-within-the-system-subtitle">
+              Оформление перевода внутри системы
+            </h3>
+            <span class="transfers-within-the-system-text">
+              Введите логин участника Loance для перевода
+            </span>
+            <div class="transfers-within-the-system-input-container">
+              <input class="transfers-within-the-system-input" />
+              <span class="transfers-within-the-system-input-text"
+                >Данный пользователь существует в системе</span
+              >
+            </div>
           </div>
-          <div>
+
+          <div class="transfer-repl-methods-container">
             <div class="replenishment-methods">
               <h3 class="methods-subtitle">
                 Выберите актив для перевода внутри системы:
@@ -29,21 +35,30 @@
               <div class="replenishment-calc">
                 <span class="usd">USD</span>
                 <div class="transfer-cont">
-                  <input type="text" class="calc-value" placeholder="1400.00">
+                  <input type="text" class="calc-value" placeholder="1400.00" />
                   <img
                     class="transfer"
                     alt="arrows"
                     :src="require('~/assets/images/transfer.png')"
                   />
-                  <input type="text" class="calc-value" placeholder="1.000000">
+                  <input
+                    type="text"
+                    class="calc-value"
+                    placeholder="1.000000"
+                  />
                 </div>
                 <span class="btc">BTC</span>
               </div>
             </div>
           </div>
-          <button v-on:click="selectPage = 'verify'" class="transfers-within-the-system-button">
-            Перевести участнику
-          </button>
+          <div class="transfers-within-the-system-button-container">
+            <button
+              v-on:click="selectPage = 'verify'"
+              class="transfers-within-the-system-button"
+            >
+              Перевести участнику
+            </button>
+          </div>
         </div>
         <div class="top-up-balance">
           <span class="top-up-balance-text">Не хватает баланса?</span>
@@ -76,8 +91,18 @@
           </tr>
         </table>
         <div class="verify-data-button-container">
-          <button v-on:click="selectPage = 'transferData'" class="verify-data-button-submit">Все верно, открыть</button>
-          <button v-on:click="selectPage = 'transfers'" class="verify-data-button-reject">Отклонить</button>
+          <button
+            v-on:click="selectPage = 'transferData'"
+            class="verify-data-button-submit"
+          >
+            Все верно, открыть
+          </button>
+          <button
+            v-on:click="selectPage = 'transfers'"
+            class="verify-data-button-reject"
+          >
+            Отклонить
+          </button>
         </div>
       </div>
       <div v-if="selectPage == 'transferData'" class="transfer-data">
@@ -104,7 +129,9 @@
             </td>
           </tr>
         </table>
-        <div class="transfer-of-assets-info-container transfer-of-assets-info-container_verify-data">
+        <div
+          class="transfer-of-assets-info-container transfer-of-assets-info-container_verify-data"
+        >
           <div class="transfer-of-assets-img">
             <img
               class="transfer-of-assets-cheсkmark"
@@ -117,7 +144,9 @@
               Перевод в систему инвестиций успешно воспроизведен, если хотите
               перевести средства снова, нажмите ниже
             </span>
-            <a href="/TransactionHistory" class="transfer-of-assets-info-link">Перевести средства</a>
+            <a href="/TransactionHistory" class="transfer-of-assets-info-link"
+              >Перевести средства</a
+            >
           </div>
         </div>
       </div>
@@ -128,13 +157,13 @@
 
 <script>
 import Header from "~/components/Header.vue";
-import Select from '~/components/Select.vue';
+import Select from "~/components/Select.vue";
 export default {
   name: "BalanceReplenishment",
   components: { Header, Select },
   data() {
     return {
-      selectPage: 'transfers',
+      selectPage: "transfers",
       options: [
         {
           id: "1",
