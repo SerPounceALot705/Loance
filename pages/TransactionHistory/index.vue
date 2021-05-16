@@ -228,7 +228,14 @@ export default {
   background-image: url("~/assets/images/1470.png");
   background-repeat: no-repeat;
 
-   @media #{$phone} {
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+    background-image: none;
+    height: auto;
+
+  }
+
+   @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     background-image: none;
     height: auto;

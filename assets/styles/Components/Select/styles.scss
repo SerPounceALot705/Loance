@@ -1,14 +1,20 @@
 .replenishment-methods {
   margin-bottom: 48px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 678px) {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     margin: 0 auto;
   }
 }
 
 .container-methods {
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     padding: 32px;
   }
 }
@@ -42,11 +48,18 @@
   padding: 36px;
   border-radius: 15px;
   background-color: #ffffff;
+  
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     padding: 0;
   }
+}
+
+
+.transfer-of-assets-container_box {
+  background-color: #ffffff;
+  box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
 }
 
 .select-info-subtitle {
@@ -75,7 +88,11 @@
     padding: 5px 0 5px;
   }
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 678px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
   }
 }
@@ -99,7 +116,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     padding-right: 10px;
   }
 }
@@ -116,7 +133,7 @@
   height: 15px;
   margin-bottom: 2px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 11px;
   }
 }
@@ -133,7 +150,7 @@
   color: #1e375a;
   height: 9px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
   }
 }
@@ -151,7 +168,13 @@
 }
 
 .replenishment-sum {
-  @media #{$phone} {
+
+  @media screen and (max-width: 1023px) and (min-width: 678px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     margin: 0 auto;
   }
@@ -170,10 +193,15 @@
   justify-content: space-between;
   margin-bottom: 46px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 678px) {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-bottom: 25px;
     width: 100%;
-    margin-bottom: 0;
   }
 }
 
@@ -193,7 +221,7 @@
   border-right: 2px solid #e9ecf1;
   padding-right: 20px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 10px;
   }
 
@@ -213,7 +241,7 @@
   text-align: center;
   border: none;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 12px;
     width: 70px;
   }
@@ -239,7 +267,7 @@
   padding-left: 20px;
   border-left: 2px solid #e9ecf1;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 10px;
     padding-left: 15px;
 

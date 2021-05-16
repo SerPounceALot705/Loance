@@ -2,5 +2,5 @@ $lg-plus: '(min-width: 1921px)';
 $lg-minus: '(max-width: 1919px)';
 $laptop-lg: '(max-width: 1499px)';
 $laptop: '(max-width: 1224px)';
-$tablet: '(max-width: 1023px)';
-$phone: '(max-width: 550px)';
+$tablet: '((max-width: 1023px) and (min-width: 679px))';
+$phone: '((max-width: 678px) and (min-width: 375px))';

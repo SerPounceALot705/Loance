@@ -30,26 +30,21 @@
           </div>
           <table v-if="select.id != 0" class="about-currency">
             <tr>
-              <td width="125px" class="about-currency-title">Кошелек</td>
-              <td class="about-currency-title">Баланс</td>
-              <td class="about-currency-title">
+              <td width="110px" class="about-currency-title">Кошелек</td>
+              <td width="110px" class="about-currency-title">Баланс</td>
+              <td width="110px" class="about-currency-title">
                 Рыночная стоимость
-                <a
-                  ><img
-                    :src="require('~/assets/images/information.png')"
-                    alt="information-icon"
-                /></a>
               </td>
             </tr>
             <tr>
-              <td class="about-currency-name">
+              <td width="110px" class="about-currency-name">
                 <img :src="select.icon" alt="currency-colour-icon" />
                 <p class="about-currency-name-text">{{ select.subTitle }}</p>
               </td>
-              <td width="125px" class="about-currency-sum">
+              <td width="110px" class="about-currency-sum">
                 BTC {{ select.btcPrice }}
               </td>
-              <td width="150px" class="about-currency-price">
+              <td width="110px" class="about-currency-price">
                 &#36;{{ select.utdPrice }}
               </td>
             </tr>
@@ -106,7 +101,9 @@
           </div>
           <div class="top-up-balance top-up-balance_current-loan">
             <span class="top-up-balance-text">Не хватает баланса?</span>
-            <a href="/BalanceReplenishment" class="top-up-balance-button">Пополнить баланс</a>
+            <a href="/BalanceReplenishment" class="top-up-balance-button"
+              >Пополнить баланс</a
+            >
           </div>
         </div>
       </div>
@@ -115,8 +112,7 @@
 </template>
 
 <script>
-
-  import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   name: "LoanRepayment",
   data() {
@@ -189,4 +185,25 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~assets/styles/_adaptive.scss";
+
+.page {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 1080px;
+  background-image: url("~/assets/images/1174.png");
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+    background-image: none;
+    height: auto;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
+    width: 100%;
+    background-image: none;
+    height: auto;
+  }
+}
 </style>

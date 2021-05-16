@@ -42,7 +42,7 @@
   background-image: url("~/assets/images/1080.png");
   background-repeat: no-repeat;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     background-image: none;
   }
 }

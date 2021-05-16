@@ -60,7 +60,7 @@
             </button>
           </div>
         </div>
-        <div class="top-up-balance">
+        <div class="top-up-balance top-up-balance_transfers-within-the-system">
           <span class="top-up-balance-text">Не хватает баланса?</span>
           <button class="top-up-balance-button">Пополнить баланс</button>
         </div>

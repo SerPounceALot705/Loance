@@ -13,10 +13,11 @@
   color: #1e375a;
   margin-bottom: 37px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin: 0 auto;
     width: 90%;
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -30,7 +31,7 @@
   margin: 0 auto;
   margin-top: 45px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
   }
 }
@@ -43,9 +44,18 @@
   padding: 32px;
   border-radius: 15px;
   background-color: #ffffff;
+  box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
   justify-content: space-around;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 678px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -60,7 +70,14 @@
   width: 100%;
   margin-right: 32px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 678px) {
+    padding: 20px;
+    margin-right: 0;
+    width: 80%;
+
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
    padding: 20px;
     margin-right: 0;
     
@@ -82,7 +99,7 @@
   margin-bottom: 25px;
   margin-top: 36px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-top: 0;
   }
 }
@@ -152,7 +169,7 @@
   color: #1e375a;
   margin-bottom: 13px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-top: 20px;
   }
 }
@@ -197,7 +214,12 @@
     transition: 0.3s ease-in-out;
   }
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 678px) {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     margin: 20px 0;
   }
@@ -216,7 +238,11 @@
   margin-top: 85px;
   margin-bottom: 22px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-top: 0;
     text-align: center;
   }
@@ -241,7 +267,7 @@
 }
 
 .transfer-item:last-child {
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-bottom: 30px;
   }
 }
@@ -293,7 +319,13 @@
   flex-direction: row;
   margin-bottom: 51px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 0;
@@ -310,7 +342,13 @@
   align-items: center;
   justify-content: center;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    margin-right: 25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 50px;
     height: 50px;
   }
@@ -318,7 +356,7 @@
 
 .circle-checkmark {
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 35px;
     height: 35px;
   }
@@ -342,7 +380,7 @@
   width: 281px;
   margin-bottom: 6px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 200px;
     font-size: 10px;
   }
@@ -372,7 +410,12 @@
   border-top-color: #919aa7;
   border-top-style: dashed;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     padding: 20px;
   }
@@ -384,20 +427,25 @@
   justify-content: space-between;
   margin-bottom: 22px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
   }
 }
 
 .payment-information-container:nth-child(2) {
-  @media #{$phone} {
+
+  @media screen and (max-width: 1023px) and (min-width: 679px){
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     flex-wrap: wrap;
   }
 
 }
 
 .payment-information-container:last-child {
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     flex-direction: column;
   }
 }
@@ -429,7 +477,7 @@
   color: #1e375a;
   margin-bottom: 7px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 14px;
     margin-bottom: 0;
   }
@@ -486,7 +534,7 @@
   color: #1e375a;
   text-decoration: underline;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 8px;
     height: 19px;
   }
@@ -500,14 +548,14 @@
 .payment-information-amount_state {
   margin-right: 70px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 50%;
     margin-right: 0;
   }
 }
 
 .qr-code-container {
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 50%;
   }
 }
@@ -519,7 +567,7 @@
   align-items: center;
   justify-content: center;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     justify-content: flex-start;
   }
 }
@@ -632,7 +680,7 @@
   color: #44a7e1;
   margin-right: 10px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     line-height: 1.9;
   }
 }
@@ -684,7 +732,7 @@
     cursor: pointer;
   }
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     margin-top: 15px;
   }
@@ -706,7 +754,7 @@
   text-align: center;
   color: #e8ecf3;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     margin-top: 15px;
   }

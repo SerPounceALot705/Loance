@@ -20,6 +20,7 @@ export default {
 
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
+        {src: "vue-slick-carousel/dist/vue-slick-carousel.css", lang: "css"},
         {src: "~/assets/styles/base/_global.scss", lang: "scss"},
     ],
 

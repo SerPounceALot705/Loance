@@ -2,7 +2,7 @@
     width: 70%;
     margin: 0 auto;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
         padding: 20px;
     }
@@ -20,7 +20,7 @@
     margin-top: 53px;
     margin-bottom: 37px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
         font-size: 20px;
         text-align: center;
@@ -41,7 +41,7 @@
     color: #1e375a;
     margin-bottom: 25px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         margin-left: 20px;
         margin-bottom: 20px;
     }
@@ -62,7 +62,7 @@
     text-align: center;
     color: #8d75f8;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
         margin-top: 20px;
     }

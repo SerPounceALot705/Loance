@@ -5,8 +5,21 @@
   padding: 36px;
   border-radius: 15px;
   background-color: #ffffff;
+  box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
 
-  @media #{$phone} {
+  @media screen and (max-width: 1200px) and (min-width: 1024px) {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
+  }
+
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     padding: 10px;
     box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
@@ -59,7 +72,15 @@
   flex-direction: row;
   justify-content: space-between;
 
-  @media #{$phone} {
+  @media screen and (max-width: 1200px) and (min-width: 1024px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
   }
 }
@@ -92,7 +113,17 @@
     border: solid 1px #8d75f8;
   }
 
-  @media #{$phone} {
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    padding: 5px;
+    font-size: 12px;
+    height: 40px;
+    text-align: center;
+    margin-right: 7px;
+    white-space: pre-wrap;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     padding: 5px;
     font-size: 8px;
     height: 40px;
@@ -122,11 +153,18 @@
   color: #acb1b7;
 
   span {
+
+
+
     &:nth-child(1) {
       width: 90px;
       text-align: left;
 
-      @media #{$phone} {
+      @media screen and (max-width: 1023px) and (min-width: 679px) {
+
+      }
+
+      @media screen and (max-width: 678px) and (min-width: 375px) {
        width: 51px;
       }
     }
@@ -135,7 +173,11 @@
       width: 60px;
       text-align: left;
 
-      @media #{$phone} {
+      @media screen and (max-width: 1023px) and (min-width: 679px) {
+
+      }
+
+      @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 50px;
        }
     }
@@ -143,7 +185,12 @@
     &:nth-child(3) {
       width: 146px;
       text-align: left;
-      @media #{$phone} {
+
+      @media screen and (max-width: 1023px) and (min-width: 679px) {
+        width: 125px;
+      }
+
+      @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 70px;
         margin-right: 5px;
        }
@@ -152,15 +199,25 @@
     &:nth-child(4) {
       width: 95px;
       text-align: left;
-      @media #{$phone} {
-        width: 45px;
+
+      @media screen and (max-width: 1023px) and (min-width: 679px) {
+
+      }
+
+      @media screen and (max-width: 678px) and (min-width: 375px) {
+        width: 95px;
        }
     }
 
     &:nth-child(5) {
       width: 134px;
       text-align: left;
-      @media #{$phone} {
+
+      @media screen and (max-width: 1023px) and (min-width: 679px) {
+
+      }
+
+      @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 75px;
        }
     }
@@ -168,13 +225,28 @@
     &:nth-child(6) {
       width: 150px;
       text-align: left;
-      @media #{$phone} {
+
+      @media screen and (max-width: 1023px) and (min-width: 679px) {
         width: 50px;
+      }
+
+      @media screen and (max-width: 678px) and (min-width: 375px) {
+        width: 35px;
        }
     }
   }
 
-  @media #{$phone} {
+  @media screen and (max-width: 1200px) and (min-width: 1024px) {
+    width: 100%;
+
+  }
+
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     font-size: 9px;
     padding: 5px;
@@ -195,7 +267,7 @@
 .transaction-history-total {
   width: 134px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 75px;
   }
 }
@@ -205,7 +277,14 @@
 }
 
 .transaction-history-item-container {
-  @media #{$phone} {
+
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     overflow: hidden;
     overflow-x: scroll;
@@ -216,7 +295,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  max-width: 1044px;
+  width: 1044px;
   height: 60px;
   padding: 12px;
   border-radius: 5px;
@@ -228,11 +307,19 @@
   align-items: center;
   margin-bottom: 10px;
 
-  @media #{$phone} {
-    justify-content: flex-start;
-    width: 400px;
+  @media screen and (max-width: 1200px) and (min-width: 1024px) {
+    width: 100%;
+    padding: 5px; 
+  }
+
+  @media screen and (max-width: 1023px) and (min-width: 679px) {
+    width: 1044px;
+    padding: 5px; 
+  }
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
+    width: 678px;
     padding: 5px;
-    
   }
 
 }
@@ -243,10 +330,9 @@
   left: 22px;
   cursor: pointer;
 
-  @media #{$phone} {
-    top: 60%;
-    left: 45%;
-  }
+  @media screen and (max-width: 678px) and (min-width: 375px) {
+    left: 12px;
+}
 
 }
 
@@ -265,7 +351,8 @@
   text-align: left;
   color: #1e375a;
 
-  @media #{$phone} {
+  
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     width: 51px;
   }
@@ -286,9 +373,10 @@
   color: #919aa7;
 
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     width: 50px;
+
   }
 
 }
@@ -305,7 +393,7 @@
   text-align: left;
   color: #1e375a;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     width: 70px;
   }
@@ -320,13 +408,6 @@
   img {
     margin-right: 10px;
 
-    @media #{$phone} {
-      display: none;
-    }
-  }
-
-  @media #{$phone} {
-    width: 45px;
   }
 }
 
@@ -350,7 +431,7 @@
   text-align: left;
   color: #1e375a;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
   }
 }
@@ -360,13 +441,13 @@
   top: 32%;
   right: 30px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     top: 35%;
     right: 10px;
   }
 
   img {
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
       height: 15px;
     }
 
@@ -385,7 +466,7 @@
   text-align: left;
   color: #8d75f8;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     white-space: pre-wrap;
     width: 50px;
@@ -403,7 +484,7 @@
   text-align: left;
   color: #75daf8;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     white-space: pre-wrap;
     width: 50px;
@@ -421,7 +502,7 @@
   text-align: left;
   color: #8d75f8;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     white-space: pre-wrap;
     width: 50px;
@@ -439,7 +520,7 @@
   text-align: left;
   color: #e1dd6a;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     white-space: pre-wrap;
     width: 50px;
@@ -458,7 +539,7 @@
   text-align: left;
   color: #6ae181;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 9px;
     white-space: pre-wrap;
     width: 50px;
@@ -478,7 +559,7 @@
   background-color: #fcfcfc;
   margin-bottom: 20px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
    flex-direction: column;
    width: 100%;
    height: 80px;
@@ -502,7 +583,7 @@
   margin-left: 25px;
   text-align: center;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-left: 0;
     width: 100%;
     justify-content: space-between;
@@ -525,7 +606,7 @@
   margin-right: 50px;
   text-decoration: none;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-right: 0;
     font-size: 10px;
    }
@@ -544,7 +625,7 @@
   text-align: left;
   color: #1e375a;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-left: 0;
     width: 100%;
     justify-content: space-between;
@@ -567,7 +648,7 @@
   margin-left: 10px;
   margin-right: 50px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-right: 28px;
     margin-left: 0;
     font-size: 10px;
@@ -587,7 +668,7 @@
   text-align: left;
   color: #1e375a;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     margin-left: 0;
     width: 100%;
     justify-content: space-between;
@@ -611,7 +692,7 @@
   color: #1e375a;
   margin-left: 10px;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     white-space: nowrap;
     margin-right: 5px;
     font-size: 10px;

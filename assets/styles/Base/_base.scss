@@ -4,11 +4,20 @@
     padding: 36px;
     border-radius: 15px;
     background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
+    margin-right: 30px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+       margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
-        padding: 0 20px 20px 20px;
+        padding: 20px;
         height: auto;
+        margin-right: 0;
+        margin-bottom: 25px;
     }
 }
 
@@ -24,7 +33,7 @@
     color: #1e375a;
     margin-bottom: 27px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         line-height: 1.50;
     }
 }
@@ -166,14 +175,14 @@
     border-radius: 50%;
     margin-right: 40px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 50px;
         height: 50px;
         margin-right: 25px;
     }
 
     .transfer-cheсkmark {
-        @media #{$phone} {
+        @media screen and (max-width: 678px) and (min-width: 375px) {
             width: 30px;
             height: 30px;
         }
@@ -209,7 +218,7 @@
     color: #1e375a;
     margin-bottom: 7px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
     }
 }

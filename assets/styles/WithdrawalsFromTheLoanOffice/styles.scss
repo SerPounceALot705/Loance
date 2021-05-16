@@ -10,7 +10,7 @@
     width: 70%;
     margin: 0 auto;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
     }
 }
@@ -19,7 +19,17 @@
     display: flex;
     flex-direction: row;
 
-    @media #{$phone} {
+
+    @media screen and (max-width: 1200px) and (min-width: 1023px) {
+        
+    } 
+
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         flex-direction: column;
         
     }
@@ -31,13 +41,20 @@
     padding: 36px;
     border-radius: 15px;
     background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
     display: flex;
     flex-direction: column;
     margin-right: 30px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+        margin-right: 0;
+        margin-bottom: 25px;
+    } 
+
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
         padding: 20px;
+        margin-bottom: 25px;
     }
 }
 
@@ -55,7 +72,7 @@
     margin-bottom: 37px;
     margin-top: 27px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         text-align: center;
         margin-bottom: 20px;
     }
@@ -86,7 +103,7 @@ span.withdrawals-from-the-loan-office-subtitle {
     background-color: #ffffff;
     margin-bottom: 32px;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
     }
 }
@@ -131,7 +148,7 @@ span.withdrawals-from-the-loan-office-subtitle {
     color: #8d75f8;
     cursor: pointer;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
     }
 }
@@ -199,7 +216,7 @@ span.withdrawals-from-the-loan-office-subtitle {
     margin-top: 40px;
     transition: 0.2s ease-in-out;
 
-    @media #{$phone} {
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
     }
 }
@@ -223,18 +240,35 @@ span.withdrawals-from-the-loan-office-subtitle {
     margin-bottom: 32px;
 }
 
+.withdrawals-from-the-loan-office-info-container {
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+        margin-bottom: 25px;
+    } 
+
+
+    @media screen and (max-width: 678px) and (min-width: 375px) {
+        margin-bottom: 25px;
+    }
+}
+
 .current-transactions {
     width: 350px;
     height: 400px;
     padding: 36px 36px 32px;
     border-radius: 15px;
     background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
     border-bottom: 1px solid #e7e7e7;
 
-    @media #{$phone} {
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+        width: 445px;
+    } 
+
+
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
         height: auto;
-        padding: 0 20px 20px;
+        padding: 20px;
     }
 
 
@@ -259,11 +293,15 @@ span.withdrawals-from-the-loan-office-subtitle {
     padding: 36px 25px 30px;
     border-radius: 15px;
     background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
 
-    @media #{$phone} {
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+        width: 445px;
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
-        height: auto;
-        padding: 20px;
         margin-right: 0;
     }
 }

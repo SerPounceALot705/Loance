@@ -5,7 +5,7 @@
       <h3 class="transfer-of-assets-title">
         Перевод активов в инвестиционный кабинет
       </h3>
-      <div v-if="!isTransfer" class="transfer-of-assets-container">
+      <div v-if="!isTransfer" class="transfer-of-assets-container transfer-of-assets-container_box">
         <h3 class="transfer-of-assets-subtitle">Выберите актив для перевода</h3>
         <div>
           <div class="replenishment-methods">
@@ -139,7 +139,7 @@ export default {
   background-image: url("~/assets/images/1080.png");
   background-repeat: no-repeat;
 
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
     background-image: none;
     height: auto;

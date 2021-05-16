@@ -226,7 +226,7 @@ export default {
   height: 1080px;
   background-image: url("~/assets/images/1080.png");
   
-  @media #{$phone} {
+  @media screen and (max-width: 678px) and (min-width: 375px) {
     background-image: none;
     height: auto;
   }
