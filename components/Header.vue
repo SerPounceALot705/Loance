@@ -116,14 +116,18 @@
             />
           </a>
         </div>
-        <div class="mobile-header-burger-menu">
+        <div
+          @click="mobileActive = !mobileActive"
+          class="mobile-header-burger-menu"
+        >
           <div class="mobile-header-burger-line"></div>
           <div class="mobile-header-burger-line"></div>
           <div class="mobile-header-burger-line"></div>
         </div>
       </div>
 
-      <div class="mobile-header-dropdown-container">
+      <div class="mobile-header-dropdown-container" 
+      :class="{'mobile-header--active' : mobileActive}">
         <ul class="header-menu">
           <li>
             <a href="" class="header-link">
@@ -174,6 +178,7 @@ export default {
   props: ["selectLine"],
   data() {
     return {
+      mobileActive: false,
       options: [
         {
           id: "1",
