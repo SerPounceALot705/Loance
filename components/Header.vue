@@ -17,7 +17,7 @@
       <div class="header-menu-item-container">
         <ul class="header-menu">
           <li>
-            <a href="" class="header-link">
+            <a href="/" class="header-link">
               <img
                 class="header-menu-img_accounting"
                 alt="accounting"
@@ -39,6 +39,7 @@
                 :src="require('~/assets/images/001-return.png')"
               />
               <span class="header-menu-text">Инвестиции</span>
+              <div></div>
             </a>
           </li>
         </ul>
@@ -56,16 +57,16 @@
               <a href="/TransactionHistory" class="header-menu-text"
                 >Транзакции</a
               >
+              <div
+                class="header-menu-underline-transaction"
+                :class="{
+                  'header-menu-underline-transaction_actived':
+                    selectLine == 'transaction',
+                }"
+              ></div>
             </a>
           </li>
         </ul>
-        <div
-          class="header-menu-underline-transaction"
-          :class="{
-            'header-menu-underline-transaction_actived':
-              selectLine == 'transaction',
-          }"
-        ></div>
       </div>
 
       <div class="header-notifications-container">
@@ -119,15 +120,17 @@
         <div
           @click="mobileActive = !mobileActive"
           class="mobile-header-burger-menu"
+          :class="{ 'mobile-header-burger-menu--active': mobileActive }"
         >
           <div class="mobile-header-burger-line"></div>
           <div class="mobile-header-burger-line"></div>
           <div class="mobile-header-burger-line"></div>
         </div>
       </div>
-
-      <div class="mobile-header-dropdown-container" 
-      :class="{'mobile-header--active' : mobileActive}">
+      <div
+        class="mobile-header-dropdown-container"
+        :class="{ 'mobile-header--active': mobileActive }"
+      >
         <ul class="header-menu">
           <li>
             <a href="" class="header-link">
@@ -149,20 +152,20 @@
               <span class="header-menu-text">Инвестиции</span>
             </a>
           </li>
-        </ul>
-        <ul class="header-transaction">
-          <li>
-            <a href="" class="header-link header-link-transaction">
-              <img
-                class="header-menu-img"
-                alt="transaction"
-                :src="require('~/assets/images/002-transaction.png')"
-              />
-              <a href="/TransactionHistory" class="header-menu-text"
-                >Транзакции</a
-              >
-            </a>
-          </li>
+          <ul class="header-transaction">
+            <li>
+              <a href="" class="header-link header-link-transaction">
+                <img
+                  class="header-menu-img"
+                  alt="transaction"
+                  :src="require('~/assets/images/002-transaction.png')"
+                />
+                <a href="/TransactionHistory" class="header-menu-text"
+                  >Транзакции</a
+                >
+              </a>
+            </li>
+          </ul>
         </ul>
       </div>
     </div>

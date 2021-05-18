@@ -366,18 +366,16 @@
   color: #ffffff;
   cursor: pointer;
 
-  &:hover {
-    background: rgb(140, 116, 247);
-    background: linear-gradient(90deg, rgba(140, 116, 247, 1) 23%, rgba(140, 116, 247, 0.9332107843137255) 48%, rgba(186, 175, 235, 0.865983893557423) 79%);
-    color: #ffffff;
-    transition: 0.3s ease-in-out;
-  }
-
     @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
         margin-bottom: 20px;
     }
 
+}
+
+.verify-data-button-submit:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .verify-data-button-reject {
@@ -396,6 +394,12 @@
   text-align: center;
   color: #1e375a;
   cursor: pointer;
+
+  &:hover {
+    background-color: #8d75f8;
+    transition: all .3s ease-in-out;
+    color: #ffffff;
+  }
 
   @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;

@@ -4,7 +4,6 @@
 
     @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
-        padding: 20px;
     }
 }
 .transfer-of-assets-title {
@@ -61,10 +60,12 @@
     letter-spacing: normal;
     text-align: center;
     color: #8d75f8;
+    margin-bottom: 28px;
 
     @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 25px;
     }
 }
 

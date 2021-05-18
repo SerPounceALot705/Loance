@@ -48,7 +48,7 @@
   padding: 36px;
   border-radius: 15px;
   background-color: #ffffff;
-  
+
 
   @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 100%;
@@ -58,8 +58,13 @@
 
 
 .transfer-of-assets-container_box {
-  background-color: #ffffff;
-  box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
+
+  @media screen and (max-width: 678px) and (min-width: 375px) {
+    background-color: #ffffff;
+    box-shadow: 0 0 40px 0 rgb(30 55 90 / 10%);
+    padding: 20px;
+  }
+
 }
 
 .select-info-subtitle {
@@ -239,17 +244,19 @@
   color: #1e375a;
   width: 95px;
   text-align: center;
-  border: none;
+  border: 1px solid #ffffff;
+
+  &:focus {
+    outline: 1px solid #ffffff;
+
+  }
 
   @media screen and (max-width: 678px) and (min-width: 375px) {
     font-size: 12px;
     width: 70px;
   }
 
-  .calc-value:focus {
-    outline: 0;
-    outline-offset: 0;
-  }
+
 }
 
 .btc {
