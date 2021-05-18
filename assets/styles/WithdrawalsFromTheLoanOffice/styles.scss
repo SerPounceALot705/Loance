@@ -7,8 +7,17 @@
 }
 
 .withdrawals-from-the-loan-office {
-    width: 70%;
+    width: 58%;
     margin: 0 auto;
+
+    @media screen and (max-width: 1200px) and (min-width: 1024px) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 1023px) and (min-width: 679px) {
+        width: 90%;
+    }
+
 
     @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 100%;
