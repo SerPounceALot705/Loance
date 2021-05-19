@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Header :isSubtitle="true" selectLine="default"/>
+    <Header :isSubtitle="true" selectLine="default" />
     <section class="loanscreen">
       <div class="loanscreen-content-container">
         <div class="loanScreen-container">
@@ -18,14 +18,17 @@
           <h3 class="withdrawal-of-funds-title">
             Вывод средств с доступного кредитного обеспечения
           </h3>
-          <div class="withdrawal-of-funds-button">
-            <img
-              class="withdrawal-of-funds-button-img"
-              :src="require('~/assets/images/download.png')"
-              alt="download-icon"
-            />
-            <span class="withdrawal-of-funds-button-text">Вывод средств</span>
-          </div>
+          <a href="/WithdrawalsFromTheLoanOffice/">
+            <div class="withdrawal-of-funds-button">
+              <img
+                class="withdrawal-of-funds-button-img"
+                :src="require('~/assets/images/download.png')"
+                alt="download-icon"
+              />
+              <span class="withdrawal-of-funds-button-text">Вывод средств</span>
+            </div></a
+          >
+
           <h3 class="repayment-of-credit-title">
             Погашение кредитного обеспечения
             <img
@@ -34,17 +37,18 @@
               alt="information-icon"
             />
           </h3>
-
-          <div class="repayment-of-credit-button">
-            <img
-              class="repayment-of-credit-button-img"
-              :src="require('~/assets/images/upload.png')"
-              alt="upload-icon"
-            />
-            <a href="/LoanRepayment" class="repayment-of-credit-button-text"
-              >Погашение долга</a
-            >
-          </div>
+          <a href="/LoanRepayment/">
+            <div class="repayment-of-credit-button">
+              <img
+                class="repayment-of-credit-button-img"
+                :src="require('~/assets/images/upload.png')"
+                alt="upload-icon"
+              />
+              <a href="/LoanRepayment" class="repayment-of-credit-button-text"
+                >Погашение долга</a
+              >
+            </div></a
+          >
         </div>
         <div class="affiliate-program-container">
           <h3 class="affiliate-program-title">Партнерская программа</h3>
@@ -55,9 +59,11 @@
             ref="affiliate"
           />
           <div class="copy" v-on:click="copy"></div>
-          <button class="affiliate-program-button">
-            Подробнее о партнерской программе
-          </button>
+          <form action="https://keymat.club/partner/">
+            <button type="submit" class="affiliate-program-button">
+              Подробнее о партнерской программе
+            </button>
+          </form>
         </div>
       </div>
       <div class="loanscreen-content-container">
@@ -101,7 +107,9 @@
             <span class="assets-table-item-total">BTC 1.000023</span>
             <span class="assets-table-item-sum">&#36;62000</span>
             <span class="assets-table-item-sum">&#36;300.00</span>
-            <div class="assets-table-item-button">+</div>
+            <a href="/IncreaseInDeposit/"
+              ><div class="assets-table-item-button">+</div></a
+            >
             <div class="assets-table-item-score"></div>
           </div>
           <div class="assets-table-item-container">
@@ -112,20 +120,24 @@
             <span class="assets-table-item-total">ETH 1.000023</span>
             <span class="assets-table-item-sum">&#36;2000</span>
             <span class="assets-table-item-sum">&#36;200.00</span>
-            <div class="assets-table-item-button">+</div>
+            <a href="/IncreaseInDeposit/"
+              ><div class="assets-table-item-button">+</div></a
+            >
             <div
               class="assets-table-item-score assets-table-item-score_blue"
             ></div>
           </div>
           <div class="assets-table-item-container">
             <div class="assets-table-item-current-container">
-              <img :src="require('~/assets/images/keymat.png')" />
-              <span>Keymat Token</span>
+              <img :src="require('~/assets/images/kmx-ic.jpg')" />
+              <span>Keymat</span>
             </div>
             <span class="assets-table-item-total">KMX 20.00</span>
             <span class="assets-table-item-sum">&#36;200</span>
             <span class="assets-table-item-sum">&#36;100.00</span>
-            <div class="assets-table-item-button">+</div>
+            <a href="/IncreaseInDeposit/"
+              ><div class="assets-table-item-button">+</div></a
+            >
             <div
               class="assets-table-item-score assets-table-item-score_green"
             ></div>
@@ -147,7 +159,9 @@
             <span class="assets-table-item-sum assets-table-item-sum_inactive"
               >&#36;0.00</span
             >
-            <div class="assets-table-item-button">+</div>
+            <a href="/IncreaseInDeposit/"
+              ><div class="assets-table-item-button">+</div></a
+            >
           </div>
           <div class="assets-table-item-container">
             <div
@@ -166,7 +180,9 @@
             <span class="assets-table-item-sum assets-table-item-sum_inactive"
               >&#36;0.00</span
             >
-            <div class="assets-table-item-button">+</div>
+            <a href="/IncreaseInDeposit/"
+              ><div class="assets-table-item-button">+</div></a
+            >
           </div>
         </div>
         <div class="deposit-container">
@@ -190,9 +206,11 @@
             <p>непогашенный займ</p></span
           >
           <span class="deposit-erned-total">&#36;0.00</span>
-          <button class="deposit-top-up-balance-button">
-            Пополнить баланс
-          </button>
+          <form action="/BalanceReplenishment/">
+            <button type="submit" class="deposit-top-up-balance-button">
+              Пополнить баланс
+            </button>
+          </form>
           <button class="deposit-transfer-balance-button">
             Перевести баланс в инвестиционный
           </button>
@@ -225,7 +243,7 @@ export default {
   margin: 0 auto;
   height: 1080px;
   background-image: url("~/assets/images/1080.png");
-  
+
   @media screen and (max-width: 678px) and (min-width: 375px) {
     background-image: none;
     height: auto;

@@ -14,6 +14,7 @@
         />
         <p class="keymat-logo">by Keymat</p>
       </a>
+      <a href="https://keymat.club/" class="back-to-keymat">back to Keymat</a>
       <div class="header-menu-item-container">
         <ul class="header-menu">
           <li>
@@ -101,6 +102,7 @@
           />
           <p class="keymat-logo">by Keymat</p>
         </a>
+        <a href="https://keymat.club/" class="back-to-keymat">back to Keymat</a>
         <div class="header-notifications-container">
           <a href="">
             <img
@@ -132,8 +134,9 @@
         :class="{ 'mobile-header--active': mobileActive }"
       >
         <ul class="header-menu">
+          <a href="https://keymat.club/" class="back-to-keymat-mobile">back to keymat</a>
           <li>
-            <a href="" class="header-link">
+            <a href="/" class="header-link">
               <img
                 class="header-menu-img_accounting"
                 alt="accounting"
@@ -154,7 +157,7 @@
           </li>
           <ul class="header-transaction">
             <li>
-              <a href="" class="header-link header-link-transaction">
+              <a href="/TransactionHistory" class="header-link header-link-transaction">
                 <img
                   class="header-menu-img"
                   alt="transaction"

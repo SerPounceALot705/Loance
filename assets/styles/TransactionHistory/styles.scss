@@ -156,8 +156,6 @@
 
   span {
 
-
-
     &:nth-child(1) {
       width: 90px;
       text-align: left;
@@ -260,11 +258,6 @@
   display: flex;
   align-items: flex-start;
 }
-
-
-
-
-
 
 .transaction-history-total {
   width: 134px;
@@ -409,6 +402,8 @@
 
   img {
     margin-right: 10px;
+    width: 18px;
+    height: 18px;
 
   }
 }

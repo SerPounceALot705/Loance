@@ -53,7 +53,7 @@
               item.assets
             }}</span>
           </div>
-          <span class="transaction-history-total">{{ item.sum }} BTC</span>
+          <span class="transaction-history-total">{{ item.sum }}</span>
 
           <span
             class="transaction-history-status"
@@ -153,9 +153,9 @@ export default {
           date: "08.07.2019",
           time: "13:00",
           type: "Пополнение",
-          assets: "Bitcoin",
-          assetsIconUrl: require("~/assets/images/payeer.png"),
-          sum: "1.000023445 BTC",
+          assets: "KMX",
+          assetsIconUrl: require("~/assets/images/kmx.jpg"),
+          sum: "1.000023445 KMX",
           status: "Подтверждено",
           info: {
             isOpen: false,
@@ -169,9 +169,9 @@ export default {
           date: "08.07.2019",
           time: "13:00",
           type: "Пополнение",
-          assets: "Payeer",
-          assetsIconUrl: require("~/assets/images/payeer.png"),
-          sum: "1.000023445 BTC",
+          assets: "KMX",
+          assetsIconUrl: require("~/assets/images/kmx.jpg"),
+          sum: "1.000023445 KMX",
           status: "Оплачено",
           info: {
             isOpen: false,
@@ -185,9 +185,9 @@ export default {
           date: "08.07.2019",
           time: "13:00",
           type: "Пополнение",
-          assets: "Payeer",
-          assetsIconUrl: require("~/assets/images/payeer.png"),
-          sum: "1.000023445 BTC",
+          assets: "KMX",
+          assetsIconUrl: require("~/assets/images/kmx.jpg"),
+          sum: "1.000023445 KMX",
           status: "Оплачено",
           info: {
             isOpen: false,

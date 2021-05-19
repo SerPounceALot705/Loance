@@ -1,9 +1,7 @@
 .loanscreen {
   margin-top: 44px;
 
-  @media screen and (max-width: 1023px) and (min-width: 679px) {
-  
-  }
+  @media screen and (max-width: 1023px) and (min-width: 679px) {}
 
   @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 90%;
@@ -659,9 +657,9 @@
     &:nth-child(1) {
       width: 143px;
 
-  
 
-       @media screen and (max-width: 678px) and (min-width: 375px) {
+
+      @media screen and (max-width: 678px) and (min-width: 375px) {
         width: 78px;
       }
     }
@@ -706,7 +704,7 @@
   right: -7%;
 
   @media screen and (max-width: 1023px) and (min-width: 679px) {
-    
+
     right: 15%;
     top: 0px;
   }
@@ -796,6 +794,14 @@
   width: 86px;
 }
 
+a  {
+  text-decoration: none; 
+}
+
+a:link, a:visited { 
+  color:#1e375a;
+}
+
 .assets-table-item-button {
   width: 90px;
   height: 28px;
@@ -811,6 +817,8 @@
   letter-spacing: normal;
   text-align: center;
   color: #1e375a;
+
+
 
   @media screen and (max-width: 678px) and (min-width: 375px) {
     width: 60px;
